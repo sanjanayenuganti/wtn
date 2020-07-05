@@ -1,0 +1,39 @@
+Is Even?????
+=====================
+if(input1%2==0)
+return 2;
+else
+return 1;
+
+======================
+Is Odd?????
+======================
+if(input1%2==0)
+return 1;
+else
+return 2;
+
+=========================================
+Return last digit of the given number??
+=========================================
+return Math.abs(input1%10);
+
+
+==========================================
+Return second last digit of given number??
+==========================================
+int b=Math.abs(input1);
+if(b<10)
+return -1;
+int a=(input1)/10;
+return (Math.abs(a%10));
+
+
+==========================================
+Sum of last digits of two given numbers??
+==========================================
+if(input1<0)
+		{input1=(-1)*input1;}
+		if(input2<0){
+		input2=(-1)*input2;}
+		return ((input1%10)+(input2%10));

@@ -1,0 +1,64 @@
+Number of Primes in a specified range???
+*******************************************
+int i,j;
+		int c=0,c1=0;
+		for(i=input1;i<=input2;i++)
+		{
+			for(j=1;j<=i;j++)
+			{
+				if(i%j==0)
+				c++;
+			}
+		
+		if(c==2){c1++;}
+		c=0;
+		}
+		return c1;
+
+=====================
+All Digits Count???
+**********************
+int c=0,d;
+		while(input1>9)
+		{
+			d=input1%10;
+			c++;
+			input1=input1/10;
+		}
+		return c+1;
+========================
+Unique Digits Count???
+************************
+int c=0,r,i;
+		int h[]=new int[10];
+		while(input1>0){
+			r=input1%10;
+			h[r]++;
+			input1=input1/10;
+		}
+		for(i=0;i<10;i++)
+		{
+			if(h[i]>0){
+				c++;
+			}
+		}
+		return c;
+
+
+=============================
+Non-Repeated Digits Count???
+******************************
+int c=0,r,i;
+		int h[]=new int[10];
+		while(input1>0)
+		{
+			r=input1%10;
+			h[r]++;
+			input1=input1/10;
+		}
+		for(i=0;i<10;i++){
+			if(h[i]==1){
+				c++;
+			}
+		}
+		return c;

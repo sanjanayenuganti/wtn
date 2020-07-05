@@ -1,0 +1,80 @@
+Even or Odd Digits Sum???
+===========================
+int sum=0;
+	int r;
+	if(input2.equals("even"))
+	{
+		while(input1>0)
+		{
+			r=input1%10;
+			if(r%2==0)
+			{
+				sum=sum+r;
+			}
+			input1/=10;
+		}
+	}
+	else
+	{
+		while(input1>0)
+		{
+			r=input1%10;
+			if(r%2!=0)
+			{
+				sum=sum+r;
+			}
+			input1/=10;
+		}
+	}
+	return sum;
+
+==============================
+Odd Digits Sum???
+==============================
+int sum=0;
+    while(input1>0)
+    {
+        int r=input1%10;
+        if(r%2!=0)
+        {
+            sum=sum+r;
+        }
+        input1/=10;
+    }
+    return sum;
+
+
+===============================
+Even Digits Sum???
+===============================
+int sum=0;
+    while(input1>0)
+    {
+        int r=input1%10;
+        if(r%2=0)
+        {
+            sum=sum+r;
+        }
+        input1/=10;
+    }
+    return sum;
+
+
+===============================
+Digits Sum???
+===============================
+int sum = 0; 
+		int a=input1;
+		input1=Math.abs(input1);
+        while (input1 > 0 || sum > 9)  
+        { 
+            if (input1 == 0) { 
+                input1 = sum; 
+                sum = 0; 
+            } 
+            sum += input1 % 10; 
+            input1 /= 10; 
+        } 
+		if(a<0)
+        return (-1)*sum;
+		return sum; 

@@ -1,0 +1,83 @@
+Weight of a Hill pattern???
+============================
+int i,j;
+    int sum=0;
+    for(i=0;i<input1;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            sum=sum+input2;
+        }
+         input2=input2+input3;
+    }
+    return sum;
+
+
+==================================================
+Creating PIN using three input given numbers???
+==================================================
+int unit1,unit2,unit3;
+		unit1=input1%10;
+		unit2=input2%10;
+		unit3=input3%10;
+		int ten1,ten2,ten3;
+		ten1=(input1/10)%10;
+		ten2=(input2/10)%10;
+		ten3=(input3/10)%10;
+		int hun1,hun2,hun3;
+		hun1=input1/100;
+		hun2=input2/100;
+		hun3=input3/100;
+		int unit=Math.min(unit1,Math.min(unit2,unit3));
+		int ten=Math.min(ten1,Math.min(ten2,ten3));
+		int hun=Math.min(hun1,Math.min(hun2,hun3));
+		int thu=Math.max(unit1,Math.max(unit2,Math.max(unit3,Math.max(ten1,Math.max(ten2,Math.max(ten3,Math.max(hun1,Math.max(hun1,Math.max(hun2,hun3)))))))));
+		int pin=thu*1000+hun*100+ten*10+unit;
+		return pin;
+
+
+=======================================================
+Is Palindrome possible???
+==================================
+int a[26]={0};
+	int i;
+	while(input1>0)
+	{
+		a[input1%10]++;
+		input1/=10;
+	}
+	int odd=0;
+	for(i=0;i<10;i++)
+	{
+		if(a[i]&1)
+		{
+			odd++;
+		}	
+		if(odd>1)
+		{
+			return 1;
+		}
+	}
+	return 2;
+
+=========================================================
+Is Palindrome Number???
+===================================
+int r=0;
+		int n=input1;
+		while(input1>0)
+		{
+			r=r*10+input1%10;
+			input1=input1/10;
+		}
+		if(r!=n)
+		{
+			return 1;
+		}
+		else
+		{
+			return 2;
+		}
+
+
+

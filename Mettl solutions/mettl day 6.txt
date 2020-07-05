@@ -1,0 +1,58 @@
+Is Prime???
+*****************
+int i,c=0;
+		for(i=1;i<=input1;i++)
+		{
+			if(input1%i==0){
+				c++;
+			}
+		}
+		if(c==2)
+		return 2;
+		return 1;
+
+============================
+Factorial of a number???
+****************************
+int i,p=1;
+		for(i=1;i<=input1;i++)
+		{
+			p=p*i;
+		}
+		return p;
+
+====================
+Nth Fibonacci???
+********************
+int a=0;
+		int b=1;
+		int c=0;
+		int d=3;
+		while(d<=input1){
+			c=a+b;
+			a=b;
+			b=c;
+			d++;
+		}
+		return c;
+
+==================
+Nth prime???
+******************
+int k=2;
+		int d=0,i,c=0;
+		int p=0;
+		while(d<=input1){
+			for(i=2;i<k/2;i++){
+				if(k%i==0){
+					c++;
+				}
+			}
+			if(c==0){
+				d++;
+				p=k;
+			}
+			k++;
+			c=0;
+		}
+		return p;
